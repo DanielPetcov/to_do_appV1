@@ -1,0 +1,23 @@
+@import '../generic_styles/colors';
+@import '../generic_styles/fonts';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app{
+    min-height: 100vh;
+    width: 100%;
+    background-color: $primary-color;
+    color: $accent-color;
+    font-family: $main-font;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+    padding-top: 3em;
+    padding-bottom: 1em;
+}

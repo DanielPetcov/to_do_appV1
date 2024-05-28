@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.to-do-list {
+  width: 40%;
+  max-width: 500px;
+}
+.to-do-list h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.to-do-list .list-form {
+  margin-bottom: 2rem;
+}
+.to-do-list .list-form .input-field {
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 4px solid #365486;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  padding: 0.8em 2em;
+}
+.to-do-list .list-form .input-field .input-text {
+  width: 100%;
+  padding-right: 1rem;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+.to-do-list .list-form .input-field .input-text:focus {
+  border: none;
+  outline: none;
+}
+.to-do-list .list-form .input-field .input-btn {
+  background-color: #365486;
+  border: none;
+  outline: none;
+  padding: 0.6em 2em;
+  border-radius: 9px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border: 3px solid #365486;
+  transition: all 0.2s ease-in;
+}
+.to-do-list .list-form .input-field .input-btn:hover {
+  background-color: #FFFFFF;
+  color: #365486;
+  border: 3px solid #365486;
+}
+
+@media screen and (max-width: 750px) {
+  .to-do-list {
+    width: 60%;
+  }
+  .input-field {
+    flex-direction: column;
+  }
+  .input-field .input-text {
+    margin-bottom: 1rem;
+  }
+}/*# sourceMappingURL=list_style.css.map */

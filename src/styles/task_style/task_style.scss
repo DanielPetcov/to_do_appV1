@@ -1,0 +1,65 @@
+@import "../generic_styles/colors";
+@import "../generic_styles/fonts";
+
+$border-radius: 14px;
+
+.task{
+    margin: 1.4rem 0;
+    background-color: $secondary-color;
+    padding: .8em 2em;
+    border: 4px solid $secondary-color;
+    border-radius: $border-radius;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .task-text{
+        width: 70%;
+        word-wrap: break-word; 
+        overflow-wrap: break-word; 
+        white-space: normal;
+    }
+
+    .delete-btn{
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url("../../assets/delete1.svg") no-repeat center center;
+        background-size: contain;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all .2s ease-in;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../../assets/delete2.svg') no-repeat center center;
+            background-size: contain;
+            opacity: 0;
+            transition: opacity 0.2s ease-in;
+          }
+          
+        &:hover::before {
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 750px){
+    .task{
+        flex-direction: column;
+        padding: .8em 1em;
+        align-items: center;
+
+        .task-text{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
+}
